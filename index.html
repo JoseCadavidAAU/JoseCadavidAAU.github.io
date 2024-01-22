@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bundle.css" />
-    <title>JC Trial</title>
+    <title>Distributed music</title>
   </head>
   <body>
     <div id="app"></div>
@@ -14,75 +14,253 @@
       // preview. Defaults, documentation, and additional settings can be found in src/config.js.
       const config = {
   "LOCAL_SESSION_ID_PREFIX": "audio-orchestrator",
-  "INITIAL_CONTENT_ID": "0822e7d4-1d24-4def-a4d0-73df9719cc4f",
+  "INITIAL_CONTENT_ID": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
   "SEQUENCE_URLS": [
     {
-      "name": "Intro - Menu",
-      "contentId": "0822e7d4-1d24-4def-a4d0-73df9719cc4f",
-      "url": "audio/0822e7d4-1d24-4def-a4d0-73df9719cc4f/sequence.json",
-      "hold": false,
+      "name": "Ambient",
+      "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+      "url": "audio/479334e3-7ffa-4857-b60a-ee6d1bac103d/sequence.json",
+      "hold": true,
       "skippable": true,
-      "instructions": true,
+      "instructions": false,
       "next": [
         {
-          "contentId": "05d750da-e6df-4f3a-bddd-da3da04f02a6",
-          "label": "Start"
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Listen again"
+        },
+        {
+          "contentId": "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+          "label": "Ambient setup 2"
+        },
+        {
+          "contentId": "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+          "label": "Spacey groove"
+        },
+        {
+          "contentId": "b585ccd6-591e-41ba-9001-25b140fea8de",
+          "label": "PKG - Children"
+        },
+        {
+          "contentId": "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+          "label": "Rainforest"
+        },
+        {
+          "contentId": "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+          "label": "Irish Cafe"
+        },
+        {
+          "contentId": "4c34c367-b6e6-4d48-8607-396d8aa3936a",
+          "label": "Jazz Music"
         }
       ]
     },
     {
-      "name": "Irish Pub",
-      "contentId": "05d750da-e6df-4f3a-bddd-da3da04f02a6",
-      "url": "audio/05d750da-e6df-4f3a-bddd-da3da04f02a6/sequence.json",
-      "hold": false,
+      "name": "Ambient setup2",
+      "contentId": "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+      "url": "audio/5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567/sequence.json",
+      "hold": true,
       "skippable": true,
-      "instructions": true,
+      "instructions": false,
       "next": [
         {
-          "contentId": "0822e7d4-1d24-4def-a4d0-73df9719cc4f",
-          "label": "Back"
+          "contentId": "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+          "label": "Listen again"
+        },
+        {
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Ambient"
+        },
+        {
+          "contentId": "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+          "label": "Spacey groove"
+        },
+        {
+          "contentId": "b585ccd6-591e-41ba-9001-25b140fea8de",
+          "label": "PKG - Children"
+        },
+        {
+          "contentId": "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+          "label": "Rainforest"
+        },
+        {
+          "contentId": "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+          "label": "Irish Cafe"
+        },
+        {
+          "contentId": "4c34c367-b6e6-4d48-8607-396d8aa3936a",
+          "label": "Jazz Music"
+        }
+      ]
+    },
+    {
+      "name": "Spacey groove",
+      "contentId": "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+      "url": "audio/594b178b-90bb-405e-a96c-e0bb7b9c7455/sequence.json",
+      "hold": true,
+      "skippable": true,
+      "instructions": false,
+      "next": [
+        {
+          "contentId": "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+          "label": "Listen again"
+        },
+        {
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Ambient"
+        },
+        {
+          "contentId": "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+          "label": "Ambient setup 2"
+        },
+        {
+          "contentId": "b585ccd6-591e-41ba-9001-25b140fea8de",
+          "label": "PKG - Children"
+        },
+        {
+          "contentId": "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+          "label": "Rainforest"
+        },
+        {
+          "contentId": "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+          "label": "Irish Cafe"
+        },
+        {
+          "contentId": "4c34c367-b6e6-4d48-8607-396d8aa3936a",
+          "label": "Jazz Music"
+        }
+      ]
+    },
+    {
+      "name": "PKG - Children",
+      "contentId": "b585ccd6-591e-41ba-9001-25b140fea8de",
+      "url": "audio/b585ccd6-591e-41ba-9001-25b140fea8de/sequence.json",
+      "hold": true,
+      "skippable": true,
+      "instructions": false,
+      "next": [
+        {
+          "contentId": "b585ccd6-591e-41ba-9001-25b140fea8de",
+          "label": "Listen again"
+        },
+        {
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Ambient"
+        },
+        {
+          "contentId": "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+          "label": "Ambient setup 2"
+        },
+        {
+          "contentId": "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+          "label": "Spacey groove"
+        },
+        {
+          "contentId": "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+          "label": "Rainforest"
+        },
+        {
+          "contentId": "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+          "label": "Irish Cafe"
+        },
+        {
+          "contentId": "4c34c367-b6e6-4d48-8607-396d8aa3936a",
+          "label": "Jazz Music"
+        }
+      ]
+    },
+    {
+      "name": "Rainforest",
+      "contentId": "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+      "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/sequence.json",
+      "hold": true,
+      "skippable": true,
+      "instructions": false,
+      "next": [
+        {
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Ambient"
+        },
+        {
+          "contentId": "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+          "label": "Listen again"
+        }
+      ]
+    },
+    {
+      "name": "Irish Cafe",
+      "contentId": "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+      "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/sequence.json",
+      "hold": true,
+      "skippable": true,
+      "instructions": false,
+      "next": [
+        {
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Ambient"
+        },
+        {
+          "contentId": "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+          "label": "Listen again"
+        }
+      ]
+    },
+    {
+      "name": "Jazz Music",
+      "contentId": "4c34c367-b6e6-4d48-8607-396d8aa3936a",
+      "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/sequence.json",
+      "hold": true,
+      "skippable": true,
+      "instructions": false,
+      "next": [
+        {
+          "contentId": "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+          "label": "Ambient"
+        },
+        {
+          "contentId": "4c34c367-b6e6-4d48-8607-396d8aa3936a",
+          "label": "Listen again"
         }
       ]
     }
   ],
   "CONTROLS": [
     {
-      "controlId": "51a7eab7-d87d-4491-8818-62937d395ebd",
-      "controlName": "Switch setup CB",
+      "controlId": "7bb8aca4-adba-482b-b289-f0d93995bb90",
+      "controlName": "Stereo",
       "controlType": "checkbox",
-      "controlDefaultValues": [],
+      "controlDefaultValues": [
+        "c4935f0e-b09f-464f-9e6a-e592419c020b"
+      ],
       "controlParameters": {
         "options": [
           {
-            "label": "Switch Setup",
-            "value": "ffe9441d-3f18-4e0c-81ea-1157ca13aa3b"
+            "label": "Only stereo",
+            "value": "c4935f0e-b09f-464f-9e6a-e592419c020b"
           }
         ]
       },
       "controlBehaviours": [
         {
-          "behaviourId": "2c19da95-9449-4cc7-ac46-316cf13b12ce",
+          "behaviourId": "7f94c779-c720-4b57-9f57-8f482d351865",
           "behaviourType": "spread",
           "behaviourParameters": {
             "perDeviceGainAdjust": 1
           }
         },
         {
-          "behaviourId": "02d9d3ba-175f-4d0e-b06a-b59f5b661832",
+          "behaviourId": "1486688d-98b2-4a6c-a862-c9397520e145",
           "behaviourType": "allowedIf",
           "behaviourParameters": {
             "conditions": [
               {
-                "conditionId": "c9892052-da5d-4d91-8458-7d6f40d9af30",
+                "conditionId": "99332982-7d5e-4c30-91a0-4dcdcfd3c2fc",
                 "property": "session.currentContentId",
                 "operator": "anyOf",
-                "value": [
-                  "0822e7d4-1d24-4def-a4d0-73df9719cc4f"
-                ],
+                "value": [],
                 "invertCondition": true
               },
               {
-                "conditionId": "a25effdd-d998-4dfe-998e-88f132b244bd",
+                "conditionId": "a6a4242a-da3d-4c90-bbd1-bdf41ed2ba01",
                 "property": "device.deviceIsMain",
                 "operator": "anyOf",
                 "value": [
@@ -96,31 +274,31 @@
       ]
     },
     {
-      "controlId": "47e645b6-a731-47c4-a2eb-7487cd17f99b",
-      "controlName": "Refresh",
+      "controlId": "fb7be656-8f21-4ab1-8b0c-193b0165d1f8",
+      "controlName": "RefreshCafe",
       "controlType": "counter",
       "controlDefaultValues": [
         0
       ],
       "controlParameters": {
-        "label": "Visit new pub",
+        "label": "Visit new cafe",
         "step": 1
       },
       "controlBehaviours": [
         {
-          "behaviourId": "3bf2b03e-6a80-4e7e-b0da-d3722511e8d7",
+          "behaviourId": "e9b79f8a-956a-4895-b7ee-3f9917c7f3f4",
           "behaviourType": "spread",
           "behaviourParameters": {
             "perDeviceGainAdjust": 1
           }
         },
         {
-          "behaviourId": "9ddd8efc-805e-4ce9-a117-2e46fb4dd1bb",
+          "behaviourId": "aee7d50f-fbb6-4f04-a102-d8dac1ac71ad",
           "behaviourType": "allowedIf",
           "behaviourParameters": {
             "conditions": [
               {
-                "conditionId": "f7c7f359-b3c6-4630-8698-a01a0e494afd",
+                "conditionId": "dc2e81fe-d311-42dd-b092-462cab5b3c92",
                 "property": "device.deviceIsMain",
                 "operator": "anyOf",
                 "value": [
@@ -129,11 +307,120 @@
                 "invertCondition": false
               },
               {
-                "conditionId": "853aefde-7a48-484e-b241-c45999685848",
+                "conditionId": "fa008fc2-9251-4d6b-81c5-b05daa21d7e6",
                 "property": "session.currentContentId",
                 "operator": "anyOf",
                 "value": [
-                  "0822e7d4-1d24-4def-a4d0-73df9719cc4f"
+                  "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+                  "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+                  "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+                  "b585ccd6-591e-41ba-9001-25b140fea8de",
+                  "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+                  "4c34c367-b6e6-4d48-8607-396d8aa3936a"
+                ],
+                "invertCondition": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "89d44b90-0f93-4198-bbaa-b1832064a51e",
+      "controlName": "RefreshForest",
+      "controlType": "counter",
+      "controlDefaultValues": [
+        0
+      ],
+      "controlParameters": {
+        "label": "New Rainforest?",
+        "step": 1
+      },
+      "controlBehaviours": [
+        {
+          "behaviourId": "8e183d39-f229-4eb4-94e8-13490f4ccc4f",
+          "behaviourType": "spread",
+          "behaviourParameters": {
+            "perDeviceGainAdjust": 1
+          }
+        },
+        {
+          "behaviourId": "dae05477-a63e-47bc-a18f-ae11c1b3d780",
+          "behaviourType": "allowedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "conditionId": "ee25fe62-98d9-46ac-beae-f546404f6e90",
+                "property": "device.deviceIsMain",
+                "operator": "anyOf",
+                "value": [
+                  "true"
+                ],
+                "invertCondition": false
+              },
+              {
+                "conditionId": "c5dfe398-861a-4994-bebd-e831c7c2c790",
+                "property": "session.currentContentId",
+                "operator": "anyOf",
+                "value": [
+                  "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+                  "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+                  "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+                  "b585ccd6-591e-41ba-9001-25b140fea8de",
+                  "1278ca98-6159-45d4-bc22-82d4140dfa7a",
+                  "4c34c367-b6e6-4d48-8607-396d8aa3936a"
+                ],
+                "invertCondition": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "controlId": "673d80fe-4ccc-4b09-8aef-ab0acfc907cd",
+      "controlName": "RefreshJazz",
+      "controlType": "counter",
+      "controlDefaultValues": [
+        0
+      ],
+      "controlParameters": {
+        "label": "Change Jazz mix",
+        "step": 1
+      },
+      "controlBehaviours": [
+        {
+          "behaviourId": "4c9c7d5e-cf87-4c63-b2fa-8dbc9902c865",
+          "behaviourType": "spread",
+          "behaviourParameters": {
+            "perDeviceGainAdjust": 1
+          }
+        },
+        {
+          "behaviourId": "491116e5-515d-46d1-ac07-5d2e35b22f37",
+          "behaviourType": "allowedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "conditionId": "274b4074-b377-48b4-b1bc-fc14e2be12c7",
+                "property": "device.deviceIsMain",
+                "operator": "anyOf",
+                "value": [
+                  "true"
+                ],
+                "invertCondition": false
+              },
+              {
+                "conditionId": "a16375f8-1a0a-4b14-b16f-23266875f813",
+                "property": "session.currentContentId",
+                "operator": "anyOf",
+                "value": [
+                  "479334e3-7ffa-4857-b60a-ee6d1bac103d",
+                  "5fc53ac2-bb76-4b41-ad2e-d1ce4ede9567",
+                  "594b178b-90bb-405e-a96c-e0bb7b9c7455",
+                  "b585ccd6-591e-41ba-9001-25b140fea8de",
+                  "33f98c8d-eed6-4ee6-8470-d2a37eaa8aef",
+                  "1278ca98-6159-45d4-bc22-82d4140dfa7a"
                 ],
                 "invertCondition": true
               }
@@ -145,20 +432,21 @@
   ],
   "SHOW_BBC_FOOTER": true,
   "SYNC_ENDPOINT": {
-    "type": "peerjs"
+    "type": "cloud-sync",
+    "hostname": "cloudsync.virt.ch.bbc.co.uk"
   },
-  "TEXT_TITLE": "JC Trial",
-  "TEXT_SUBTITLE": "Irish Pub",
-  "TEXT_INTRODUCTION": "Is this a pub crawl?",
-  "TEXT_START_LABEL": "Start pub crawl",
-  "TEXT_JOIN_LABEL": "Start pub crawl",
-  "ACCENT_COLOUR": "#006def",
+  "TEXT_TITLE": "Distributed music",
+  "TEXT_SUBTITLE": "Group B",
+  "TEXT_INTRODUCTION": "Hi",
+  "TEXT_START_LABEL": "Start new session",
+  "TEXT_JOIN_LABEL": "Join existing session",
+  "ACCENT_COLOUR": "#7080ff",
   "DEBUG_UI": true,
   "MDO_COMPRESSOR_RATIO": 2,
   "MDO_COMPRESSOR_THRESHOLD": 0,
   "OBJECT_FADE_OUT_DURATION": 0,
-  "PLAYER_IMAGE_URL": "images/8e16414e-b0ae-4d14-9ea7-1c170ee96bcb.jpg",
-  "PLAYER_IMAGE_ALT": "JC Trial"
+  "PLAYER_IMAGE_URL": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+  "PLAYER_IMAGE_ALT": "Temp pic"
 };
 
       // Instantiate the React app to render into the #app div:

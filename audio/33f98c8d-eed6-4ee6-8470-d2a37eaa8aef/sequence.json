@@ -1,0 +1,666 @@
+{
+  "duration": 120,
+  "loop": false,
+  "outPoints": [],
+  "objects": [
+    {
+      "objectId": "1-rainforest_main",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "stereo",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/01_rainforest_main_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/01_rainforest_main_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 1
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "3-silence",
+      "objectBehaviours": [
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "allowedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "operator": "equals",
+                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
+                "invertCondition": false
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 3
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "101-rainforest_aux_left",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "preferredIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceJoiningNumber",
+                "operator": "equals",
+                "value": 2,
+                "invertCondition": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "102-rainforest_aux_left"
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_left_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_left_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 101
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "102-rainforest_aux_left",
+      "objectBehaviours": [
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "allowedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "operator": "equals",
+                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
+                "invertCondition": false
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "left",
+            "panning": -1,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_left_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_left_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 102
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "103-rainforest_aux_right",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "preferredIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceJoiningNumber",
+                "operator": "equals",
+                "value": 2,
+                "invertCondition": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "104-rainforest_aux_right"
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_right_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_right_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 103
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "104-rainforest_aux_right",
+      "objectBehaviours": [
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "allowedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "operator": "equals",
+                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
+                "invertCondition": false
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "right",
+            "panning": 1,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_right_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_right_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 104
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "401-rainforest_and_chainsaw_01",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chainsaw_01_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chainsaw_01_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 401
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "403-rainforest_and_chainsaw_02",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chainsaw_02_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chainsaw_02_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 403
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "405-rainforest_and_chainsaw_03",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chainsaw_03_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chainsaw_03_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 405
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "407-rainforest_and_chainsaw_04",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_and_chainsaw_04_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_and_chainsaw_04_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 407
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "409-rainforest_and_chainsaw_05",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_and_chainsaw_05_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_and_chainsaw_05_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 409
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "411-rainforest_and_chainsaw_06",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/411_rainforest_and_chainsaw_06_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/411_rainforest_and_chainsaw_06_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
+            "priority": 411
+          }
+        }
+      ]
+    }
+  ]
+}
