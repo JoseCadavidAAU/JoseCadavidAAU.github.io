@@ -582,6 +582,28 @@
           "behaviourParameters": {
             "objectId": "111-Rain_2kHz"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": [
+              {
+                "conditionId": "b9c62c22-c407-4872-81a5-5af61d1cd1ce",
+                "property": "session.numDevices",
+                "operator": "greaterThan",
+                "value": 6,
+                "invertCondition": false
+              }
+            ]
+          }
         }
       ],
       "items": [

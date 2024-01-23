@@ -20,6 +20,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -9,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -63,6 +70,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": []
@@ -89,6 +103,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "102-piano_bright"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -178,6 +199,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "104-organ_chords"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -275,6 +303,13 @@
           "behaviourParameters": {
             "objectId": "106-organ_fixed_bright"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -370,6 +405,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "108-organ_fixed_dark"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -467,6 +509,13 @@
           "behaviourParameters": {
             "objectId": "122-gtr_dly_mono"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -562,6 +611,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "124-gtr_dly_stereo"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -659,6 +715,13 @@
           "behaviourParameters": {
             "objectId": "126-intro_chord"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -755,6 +818,13 @@
           "behaviourParameters": {
             "objectId": "132-piano_clock_low"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -843,6 +913,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "134-piano_clock"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -933,6 +1010,13 @@
           "behaviourParameters": {
             "objectId": "136-piano_repeat"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -1021,6 +1105,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "152-organ_highpitch_1"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -1118,6 +1209,13 @@
           "behaviourParameters": {
             "objectId": "154-organ_highpitch_2"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -1213,6 +1311,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "192-noisescape"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],

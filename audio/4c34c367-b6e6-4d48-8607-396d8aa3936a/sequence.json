@@ -182,17 +182,8 @@
               {
                 "property": "device.deviceIsMain",
                 "operator": "equals",
-                "value": true
+                "value": false
               }
-            ]
-          }
-        },
-        {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
             ]
           }
         },
@@ -831,17 +822,8 @@
               {
                 "property": "device.deviceIsMain",
                 "operator": "equals",
-                "value": true
+                "value": false
               }
-            ]
-          }
-        },
-        {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
             ]
           }
         },
@@ -888,17 +870,8 @@
               {
                 "property": "device.deviceIsMain",
                 "operator": "equals",
-                "value": true
+                "value": false
               }
-            ]
-          }
-        },
-        {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
             ]
           }
         },
