@@ -7,7 +7,29 @@
       "objectId": "2-Silence",
       "objectBehaviours": [
         {
-          "behaviourType": "allowedEverywhere"
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "allowedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "operator": "equals",
+                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
+                "invertCondition": false
+              }
+            ]
+          }
         }
       ],
       "items": [
@@ -21,6 +43,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/02Silence_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/02Silence_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 2
+          }
         }
       ]
     },
@@ -29,6 +60,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -42,6 +100,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/300JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/300JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 300
+          }
         }
       ]
     },
@@ -50,6 +117,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -63,6 +157,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/301JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/301JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 301
+          }
         }
       ]
     },
@@ -71,6 +174,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -84,6 +214,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/302JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/302JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 302
+          }
         }
       ]
     },
@@ -92,6 +231,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -105,6 +271,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/303JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/303JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 303
+          }
         }
       ]
     },
@@ -113,6 +288,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -137,6 +339,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/304JazzBand_000001.m4a",
             "urlSafari": null
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 304
+          }
         }
       ]
     },
@@ -145,6 +356,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -158,6 +396,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/305JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/305JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 305
+          }
         }
       ]
     },
@@ -166,6 +413,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -179,6 +453,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/306JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/306JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 306
+          }
         }
       ]
     },
@@ -187,6 +470,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -200,6 +510,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/307JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/307JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 307
+          }
         }
       ]
     },
@@ -208,6 +527,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -221,6 +567,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/308JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/308JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 308
+          }
         }
       ]
     },
@@ -229,6 +584,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -242,6 +624,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/309JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/309JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 309
+          }
         }
       ]
     },
@@ -250,6 +641,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -263,6 +681,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/310JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/310JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 310
+          }
         }
       ]
     },
@@ -271,6 +698,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -284,6 +738,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/311JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/311JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 311
+          }
         }
       ]
     },
@@ -292,6 +755,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -316,6 +806,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/312JazzBand_000001/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/312JazzBand_000001/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 312
+          }
         }
       ]
     },
@@ -324,6 +823,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -337,6 +863,15 @@
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/313JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/313JazzBand_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 313
+          }
         }
       ]
     },
@@ -345,6 +880,33 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
         }
       ],
       "items": [
@@ -357,6 +919,15 @@
             "type": "dash",
             "url": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/314JazzBand_000000/manifest.mpd",
             "urlSafari": "audio/4c34c367-b6e6-4d48-8607-396d8aa3936a/314JazzBand_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 170,
+          "source": {
+            "type": "image",
+            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "priority": 314
           }
         }
       ]

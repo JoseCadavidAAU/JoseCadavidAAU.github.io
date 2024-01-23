@@ -63,6 +63,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": []
@@ -89,6 +96,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "106-juno_chords_v1"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -178,6 +192,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "108-juno_chords_v2"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -278,6 +299,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "110-juno_chords_v3"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -390,6 +418,13 @@
           "behaviourParameters": {
             "objectId": "112-juno_chords_v4"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -501,6 +536,13 @@
           "behaviourParameters": {
             "objectId": "114-juno_chords_v5"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -589,6 +631,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "151-lead_sparkle_original"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -1075,6 +1124,13 @@
           "behaviourParameters": {
             "objectId": "153-lead_sparkle_smooth"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -1252,6 +1308,13 @@
           "behaviourParameters": {
             "objectId": "155-lead_gtr_dist"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -1340,6 +1403,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "157-lead_gtr_clean"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -1451,6 +1521,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "171-cymbal_flutter"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -1584,6 +1661,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "173-pluck_flutter"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -1950,6 +2034,13 @@
           "behaviourParameters": {
             "objectId": "192-mid_tremolo_v1"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -2038,6 +2129,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "194-mid_tremolo_v2"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],
@@ -2128,6 +2226,13 @@
           "behaviourParameters": {
             "objectId": "196-synth_rythm_v1"
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -2216,6 +2321,13 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "198-synth_rythm_v2"
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -6,
+            "conditions": []
           }
         }
       ],

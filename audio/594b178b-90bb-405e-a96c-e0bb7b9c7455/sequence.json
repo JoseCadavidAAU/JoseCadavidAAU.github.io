@@ -1082,6 +1082,18 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "502-click_tonal"

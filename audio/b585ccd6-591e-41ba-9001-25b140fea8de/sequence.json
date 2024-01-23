@@ -229,6 +229,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -317,6 +324,13 @@
                 "invertCondition": false
               }
             ]
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
           }
         }
       ],
@@ -407,6 +421,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -495,6 +516,13 @@
                 "invertCondition": false
               }
             ]
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
           }
         }
       ],
@@ -585,6 +613,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -673,6 +708,13 @@
                 "invertCondition": false
               }
             ]
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
           }
         }
       ],
@@ -1030,6 +1072,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -1119,6 +1168,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -1207,6 +1263,13 @@
                 "invertCondition": false
               }
             ]
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 6,
+            "conditions": []
           }
         }
       ],
