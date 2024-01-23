@@ -261,7 +261,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }
@@ -467,7 +467,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }
@@ -570,7 +570,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }
@@ -673,7 +673,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }
@@ -776,7 +776,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }
@@ -1167,7 +1167,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }
@@ -1270,7 +1270,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": 6,
+            "gainAdjust": 9,
             "conditions": []
           }
         }

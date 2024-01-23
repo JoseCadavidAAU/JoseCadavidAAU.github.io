@@ -586,7 +586,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -6,
+            "gainAdjust": -10,
             "conditions": []
           }
         },

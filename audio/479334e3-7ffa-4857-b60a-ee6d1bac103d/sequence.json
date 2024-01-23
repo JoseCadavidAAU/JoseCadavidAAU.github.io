@@ -101,7 +101,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -197,7 +197,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -304,7 +304,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -422,7 +422,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -540,7 +540,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -636,7 +636,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -1128,7 +1128,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -1312,7 +1312,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -1526,7 +1526,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -1666,7 +1666,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -2038,7 +2038,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -2134,7 +2134,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
@@ -2326,7 +2326,7 @@
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
+            "gainAdjust": -10,
             "conditions": []
           }
         }
