@@ -86,9 +86,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "102-gtr_chords"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "81f106c7-4323-4409-81d0-e9f6baee62f3",
+                "property": "session.numDevices",
+                "operator": "greaterThan",
+                "value": 2,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -129,15 +145,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -175,9 +193,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "106-pad_high_juno"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "9893da75-b027-44de-913d-a17d34bbb910",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 3,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -295,15 +329,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -418,9 +454,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "108-pad_high_organ"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "c2778200-98fa-476f-869c-52f9eaba2a1a",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 4,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -538,15 +590,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -661,9 +715,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "112-harp"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "27fe980f-137d-42b6-a966-181b6720762d",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 5,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -704,15 +774,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -738,9 +810,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "134-tremolo_pad"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "57fcd1c1-5192-4659-8c36-425896f88d53",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 6,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -781,15 +869,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -827,9 +917,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "136-juno_pad_low"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "141d4157-ad5a-4866-b1f3-69c1ff641b66",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 7,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -870,15 +976,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -916,9 +1024,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "142-glitch_arp"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "e43aaf5e-09fe-448e-b11c-0ba14be862a4",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 8,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -959,15 +1083,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1005,9 +1131,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "152-mute_gtr"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "25cfabc7-7153-44c3-b764-beaff213198a",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 9,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1048,15 +1190,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1094,9 +1238,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "502-click_tonal"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "3a434dae-a7c2-4982-8945-931b904323ef",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 10,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1137,15 +1297,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1183,9 +1345,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "504-hh_synthetic"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "14fe2239-da9f-40ce-b27d-160542d24f71",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 11,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1578,15 +1756,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1976,9 +2156,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "506-hh_open"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "956d2fe5-f21d-4dda-b285-c8e68bd5b10d",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 12,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -2019,15 +2215,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -2065,9 +2263,25 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "508-hh_closed"
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "c4466c42-87a9-4d9a-9b63-0a36d0c5b1d6",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "224e3747-6f31-408b-a88b-b270b2f7eec5",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 13,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -2108,15 +2322,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
