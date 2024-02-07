@@ -33,6 +33,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/01_rainforest_main_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/01_rainforest_main_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/cf3a932d-95b5-45af-a442-f10cbcfe9f7f.jpg",
+            "priority": 1
+          }
         }
       ]
     },
