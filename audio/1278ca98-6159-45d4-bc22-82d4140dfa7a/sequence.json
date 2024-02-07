@@ -4,7 +4,7 @@
   "outPoints": [],
   "objects": [
     {
-      "objectId": "101-Bar",
+      "objectId": "100-Silence",
       "objectBehaviours": [
         {
           "behaviourType": "prohibitedIf",
@@ -32,6 +32,49 @@
           }
         }
       ],
+      "items": []
+    },
+    {
+      "objectId": "101-Bar",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -90,
+            "conditions": [
+              {
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "100-Silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b20b3f48-e8f4-4552-938b-2588b13b649c",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 2,
+                "invertCondition": false
+              }
+            ]
+          }
+        }
+      ],
       "items": [
         {
           "start": 0,
@@ -43,15 +86,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/101_Bar_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/101_Bar_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 101
-          }
         }
       ]
     },
@@ -62,9 +96,30 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "101-Bar"
+            "objectId": "100-Silence"
           }
         },
         {
@@ -95,21 +150,15 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/102_Bar_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/102_Bar_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 102
-          }
         }
       ]
     },
     {
       "objectId": "103-Chat",
       "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
         {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
@@ -123,14 +172,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -147,15 +198,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/103_Chat_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/103_Chat_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 103
-          }
         }
       ]
     },
@@ -166,9 +208,30 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "103-Chat"
+            "objectId": "100-Silence"
           }
         },
         {
@@ -199,21 +262,15 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/104_Chat_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/104_Chat_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 104
-          }
         }
       ]
     },
     {
       "objectId": "105-Man",
       "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
         {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
@@ -227,14 +284,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -251,15 +310,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/105_Man_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/105_Man_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 105
-          }
         }
       ]
     },
@@ -270,9 +320,30 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "105-Man"
+            "objectId": "100-Silence"
           }
         },
         {
@@ -303,21 +374,15 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/106_Man_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/106_Man_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 106
-          }
         }
       ]
     },
     {
       "objectId": "107-Match",
       "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
         {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
@@ -331,14 +396,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -355,15 +422,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/107_Match_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/107_Match_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 107
-          }
         }
       ]
     },
@@ -374,9 +432,30 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "107-Match"
+            "objectId": "100-Silence"
           }
         },
         {
@@ -407,21 +486,15 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/108_Match_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/108_Match_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 108
-          }
         }
       ]
     },
     {
       "objectId": "109-Music",
       "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
         {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
@@ -435,14 +508,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -459,15 +534,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/109_Music_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/109_Music_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 109
-          }
         }
       ]
     },
@@ -478,15 +544,36 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
           "behaviourType": "spread",
           "behaviourParameters": {
-            "enableGainCompensation": false
+            "enableGainCompensation": true
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
           }
         },
         {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "109-Music"
+            "objectId": "100-Silence"
           }
         }
       ],
@@ -501,21 +588,15 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/110_Music_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/110_Music_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 110
-          }
         }
       ]
     },
     {
-      "objectId": "111-Rain_2kHz",
+      "objectId": "111-RainNew_4kHz",
       "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
         {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
@@ -529,14 +610,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -550,59 +633,49 @@
             "channelMapping": "stereo",
             "panning": 0,
             "type": "dash",
-            "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/111_Rain_2kHz_000000/manifest.mpd",
-            "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/111_Rain_2kHz_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 111
+            "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/111_RainNew_4kHz_000000/manifest.mpd",
+            "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/111_RainNew_4kHz_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "112-Rain",
+      "objectId": "112-RainNew_4kHz",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
           "behaviourType": "spread",
           "behaviourParameters": {
-            "enableGainCompensation": false
+            "enableGainCompensation": true
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
           }
         },
         {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "111-Rain_2kHz"
-          }
-        },
-        {
-          "behaviourType": "gainAdjustmentIf",
-          "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
-          }
-        },
-        {
-          "behaviourType": "gainAdjustmentIf",
-          "behaviourParameters": {
-            "gainAdjust": -6,
-            "conditions": [
-              {
-                "conditionId": "b9c62c22-c407-4872-81a5-5af61d1cd1ce",
-                "property": "session.numDevices",
-                "operator": "greaterThan",
-                "value": 6,
-                "invertCondition": false
-              }
-            ]
+            "objectId": "100-Silence"
           }
         }
       ],
@@ -614,17 +687,8 @@
             "channelMapping": "stereo",
             "panning": 0,
             "type": "dash",
-            "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/112_Rain_000000/manifest.mpd",
-            "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/112_Rain_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 112
+            "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/112_RainNew_4kHz_000000/manifest.mpd",
+            "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/112_RainNew_4kHz_000000/manifest-safari.mpd"
           }
         }
       ]
@@ -633,6 +697,9 @@
       "objectId": "113-Chat_2",
       "objectBehaviours": [
         {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
             "conditions": [
@@ -645,14 +712,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -669,15 +738,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/113_Chat_2_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/113_Chat_2_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 113
-          }
         }
       ]
     },
@@ -688,9 +748,30 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "113-Chat_2"
+            "objectId": "100-Silence"
           }
         },
         {
@@ -721,21 +802,15 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/114_Chat_2_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/114_Chat_2_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 114
-          }
         }
       ]
     },
     {
       "objectId": "115-Chat_3",
       "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
         {
           "behaviourType": "prohibitedIf",
           "behaviourParameters": {
@@ -749,14 +824,16 @@
           }
         },
         {
-          "behaviourType": "allowedIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
+            "gainAdjust": -90,
             "conditions": [
               {
-                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "conditionId": "0e07d5d9-1a2a-416c-9078-b3bf08648ed0",
+                "property": "session.objectIds",
                 "operator": "equals",
-                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
-                "invertCondition": false
+                "value": "100-Silence",
+                "invertCondition": true
               }
             ]
           }
@@ -773,15 +850,6 @@
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/115_Chat_3_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/115_Chat_3_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 115
-          }
         }
       ]
     },
@@ -792,9 +860,30 @@
           "behaviourType": "allowedEverywhere"
         },
         {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "115-Chat_3"
+            "objectId": "100-Silence"
           }
         },
         {
@@ -824,15 +913,6 @@
             "type": "dash",
             "url": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/116_Chat_3_000000/manifest.mpd",
             "urlSafari": "audio/1278ca98-6159-45d4-bc22-82d4140dfa7a/116_Chat_3_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 65,
-          "source": {
-            "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
-            "priority": 116
           }
         }
       ]

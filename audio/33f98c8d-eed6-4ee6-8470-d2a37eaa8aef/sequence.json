@@ -33,15 +33,6 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/01_rainforest_main_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/01_rainforest_main_000000/manifest-safari.mpd"
           }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 1
-          }
         }
       ]
     },
@@ -74,20 +65,10 @@
           }
         }
       ],
-      "items": [
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 3
-          }
-        }
-      ]
+      "items": []
     },
     {
-      "objectId": "101-rainforest_aux_left",
+      "objectId": "101-rainforest_aux_01_device_01",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -102,8 +83,8 @@
             "conditions": [
               {
                 "property": "device.deviceJoiningNumber",
-                "operator": "equals",
-                "value": 2,
+                "operator": "lessThanOrEqual",
+                "value": 3,
                 "invertCondition": false
               }
             ]
@@ -112,7 +93,16 @@
         {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "102-rainforest_aux_left"
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowed"
+            ]
           }
         }
       ],
@@ -124,23 +114,14 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_left_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_left_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 101
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_01_device_01_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_01_device_01_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "102-rainforest_aux_left",
+      "objectId": "102-rainforest_aux_01_main_left",
       "objectBehaviours": [
         {
           "behaviourType": "prohibitedIf",
@@ -176,23 +157,14 @@
             "channelMapping": "left",
             "panning": -1,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_left_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_left_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 102
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_01_main_left_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_01_main_left_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "103-rainforest_aux_right",
+      "objectId": "103-rainforest_aux_02_device_02",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -207,8 +179,8 @@
             "conditions": [
               {
                 "property": "device.deviceJoiningNumber",
-                "operator": "equals",
-                "value": 2,
+                "operator": "lessThanOrEqual",
+                "value": 3,
                 "invertCondition": false
               }
             ]
@@ -217,7 +189,16 @@
         {
           "behaviourType": "muteIf",
           "behaviourParameters": {
-            "objectId": "104-rainforest_aux_right"
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowed"
+            ]
           }
         }
       ],
@@ -229,23 +210,14 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_right_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_right_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 103
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_02_device_02_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_02_device_02_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "104-rainforest_aux_right",
+      "objectId": "104-rainforest_aux_01_main_right",
       "objectBehaviours": [
         {
           "behaviourType": "prohibitedIf",
@@ -281,23 +253,144 @@
             "channelMapping": "right",
             "panning": 1,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_right_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_right_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 104
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_01_main_right_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_01_main_right_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "401-rainforest_and_chainsaw_01",
+      "objectId": "105-rainforest_aux_01_device_03",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "preferredIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceJoiningNumber",
+                "operator": "lessThanOrEqual",
+                "value": 5,
+                "invertCondition": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowed"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/105_rainforest_aux_01_device_03_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/105_rainforest_aux_01_device_03_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "106-rainforest_aux_02_device_04",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "preferredIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceJoiningNumber",
+                "operator": "lessThanOrEqual",
+                "value": 5,
+                "invertCondition": false
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowed"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/106_rainforest_aux_02_device_04_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/106_rainforest_aux_02_device_04_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "401-rainforest_and_chansaw_01",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -342,23 +435,14 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chainsaw_01_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chainsaw_01_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 401
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chansaw_01_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chansaw_01_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "403-rainforest_and_chainsaw_02",
+      "objectId": "402-rainforest_and_chansaw_02",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -403,23 +487,14 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chainsaw_02_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chainsaw_02_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 403
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/402_rainforest_and_chansaw_02_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/402_rainforest_and_chansaw_02_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "405-rainforest_and_chainsaw_03",
+      "objectId": "403-rainforest_and_chansaw_03",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -464,23 +539,54 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chainsaw_03_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chainsaw_03_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 405
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chansaw_03_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chansaw_03_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "407-rainforest_and_chainsaw_04",
+      "objectId": "404-rainforest_and_chansaw_04",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowed"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/404_rainforest_and_chansaw_04_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/404_rainforest_and_chansaw_04_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "405-rainforest_and_chansaw_05",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -525,38 +631,17 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_and_chainsaw_04_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_and_chainsaw_04_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 407
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chansaw_05_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chansaw_05_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "409-rainforest_and_chainsaw_05",
+      "objectId": "406-rainforest_and_chansaw_06",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
-        },
-        {
-          "behaviourType": "prohibitedIf",
-          "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "device.deviceIsMain",
-                "operator": "equals",
-                "value": true
-              }
-            ]
-          }
         },
         {
           "behaviourType": "exclusive",
@@ -586,23 +671,14 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_and_chainsaw_05_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_and_chainsaw_05_000000/manifest-safari.mpd"
-          }
-        },
-        {
-          "start": 0,
-          "duration": 120,
-          "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 409
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/406_rainforest_and_chansaw_06_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/406_rainforest_and_chansaw_06_000000/manifest-safari.mpd"
           }
         }
       ]
     },
     {
-      "objectId": "411-rainforest_and_chainsaw_06",
+      "objectId": "407-rainforest_aux_05",
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
@@ -620,8 +696,56 @@
           }
         },
         {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
           "behaviourType": "exclusive",
           "behaviourParameters": {}
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_aux_05_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_aux_05_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "408-rainforest_aux_06",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
         },
         {
           "behaviourType": "muteIf",
@@ -637,6 +761,10 @@
               "moveToAllowedNotPrevious"
             ]
           }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -647,17 +775,112 @@
             "channelMapping": "mono",
             "panning": 0,
             "type": "dash",
-            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/411_rainforest_and_chainsaw_06_000000/manifest.mpd",
-            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/411_rainforest_and_chainsaw_06_000000/manifest-safari.mpd"
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/408_rainforest_aux_06_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/408_rainforest_aux_06_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "409-rainforest_aux_07",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
           }
         },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        }
+      ],
+      "items": [
         {
           "start": 0,
           "duration": 120,
           "source": {
-            "type": "image",
-            "src": "images/ad0c80bb-4db7-42fe-ab10-1266daf5d5f5.jpg",
-            "priority": 411
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_aux_07_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_aux_07_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "410-rainforest_aux_08",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        },
+        {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "moveToAllowedNotPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "channelMapping": "mono",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/410_rainforest_aux_08_000000/manifest.mpd",
+            "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/410_rainforest_aux_08_000000/manifest-safari.mpd"
           }
         }
       ]

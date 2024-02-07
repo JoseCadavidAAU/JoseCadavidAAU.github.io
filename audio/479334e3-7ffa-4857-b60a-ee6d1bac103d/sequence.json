@@ -20,6 +20,13 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -12,
+            "conditions": []
+          }
         }
       ],
       "items": [
@@ -93,16 +100,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "106-juno_chords_v1"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 2,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -143,15 +166,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -189,16 +214,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "108-juno_chords_v2"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 3,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -250,15 +291,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -296,16 +339,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "110-juno_chords_v3"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 4,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -357,15 +416,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -414,16 +475,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "112-juno_chords_v4"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 5,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -475,15 +552,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -532,16 +611,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "114-juno_chords_v5"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 6,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -582,15 +677,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -628,16 +725,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "151-lead_sparkle_original"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 7,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -876,15 +989,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1120,16 +1235,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "153-lead_sparkle_smooth"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 8,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1214,15 +1345,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1304,16 +1437,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "155-lead_gtr_dist"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 9,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1354,15 +1503,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1400,16 +1551,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "157-lead_gtr_clean"
+            "gainAdjust": -12,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 10,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1461,15 +1628,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1518,16 +1687,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "171-cymbal_flutter"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 11,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1590,15 +1775,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1658,16 +1845,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "173-pluck_flutter"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 12,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -1752,15 +1955,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -1846,13 +2051,37 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": -120,
             "conditions": [
               {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
                 "property": "session.objectIds",
                 "operator": "equals",
                 "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "equals",
+                "value": 2,
                 "invertCondition": false
               }
             ]
@@ -1951,15 +2180,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -2030,16 +2261,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "192-mid_tremolo_v1"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 13,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -2080,15 +2327,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -2126,16 +2375,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "194-mid_tremolo_v2"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 14,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -2176,15 +2441,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -2222,16 +2489,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "196-synth_rythm_v1"
+            "gainAdjust": -12,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -12,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "52da1cba-6e10-4ba5-8075-ae1e8992e534",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "b3858350-a92d-4f76-b2aa-d8785614c665",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 15,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -2272,15 +2555,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }
@@ -2318,16 +2603,32 @@
           }
         },
         {
-          "behaviourType": "muteIf",
+          "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "objectId": "198-synth_rythm_v2"
+            "gainAdjust": -10,
+            "conditions": []
           }
         },
         {
           "behaviourType": "gainAdjustmentIf",
           "behaviourParameters": {
-            "gainAdjust": -10,
-            "conditions": []
+            "gainAdjust": -120,
+            "conditions": [
+              {
+                "conditionId": "85a517af-9f65-4a88-9304-e53ec393c686",
+                "property": "session.objectIds",
+                "operator": "equals",
+                "value": "3-silence",
+                "invertCondition": true
+              },
+              {
+                "conditionId": "ca928b0c-c6ad-461c-af9e-d824382fe6a5",
+                "property": "session.numDevices",
+                "operator": "greaterThanOrEqual",
+                "value": 16,
+                "invertCondition": false
+              }
+            ]
           }
         }
       ],
@@ -2368,15 +2669,17 @@
           "behaviourParameters": {}
         },
         {
-          "behaviourType": "prohibitedIf",
+          "behaviourType": "muteIf",
           "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "session.objectIds",
-                "operator": "equals",
-                "value": "3-silence",
-                "invertCondition": false
-              }
+            "objectId": "3-silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
             ]
           }
         }

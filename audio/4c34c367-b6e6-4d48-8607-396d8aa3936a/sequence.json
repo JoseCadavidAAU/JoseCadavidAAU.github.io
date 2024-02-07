@@ -74,18 +74,22 @@
           }
         },
         {
+          "behaviourType": "muteIf",
+          "behaviourParameters": {
+            "objectId": "2-Silence"
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
+        },
+        {
           "behaviourType": "onChange",
           "behaviourParameters": {
             "start": "canAlwaysStart",
             "allocate": [
-              "moveToAllowedNotPrevious"
+              "stayInPrevious"
             ]
-          }
-        },
-        {
-          "behaviourType": "muteIf",
-          "behaviourParameters": {
-            "objectId": "2-Silence"
           }
         }
       ],
@@ -131,19 +135,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -192,6 +200,15 @@
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
         }
       ],
       "items": [
@@ -236,19 +253,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -293,19 +314,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -361,19 +386,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -418,19 +447,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -475,19 +508,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -532,19 +569,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -589,19 +630,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -646,19 +691,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -703,19 +752,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -760,19 +813,23 @@
           }
         },
         {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "moveToAllowedNotPrevious"
-            ]
-          }
-        },
-        {
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
+        },
+        {
+          "behaviourType": "exclusive",
+          "behaviourParameters": {}
         }
       ],
       "items": [
@@ -832,6 +889,15 @@
           "behaviourParameters": {
             "objectId": "2-Silence"
           }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
+          }
         }
       ],
       "items": [
@@ -879,6 +945,15 @@
           "behaviourType": "muteIf",
           "behaviourParameters": {
             "objectId": "2-Silence"
+          }
+        },
+        {
+          "behaviourType": "onChange",
+          "behaviourParameters": {
+            "start": "canAlwaysStart",
+            "allocate": [
+              "stayInPrevious"
+            ]
           }
         }
       ],
