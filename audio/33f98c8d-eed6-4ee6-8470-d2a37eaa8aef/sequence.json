@@ -39,7 +39,7 @@
           "duration": 120,
           "source": {
             "type": "image",
-            "src": "images/cf3a932d-95b5-45af-a442-f10cbcfe9f7f.jpg",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
             "priority": 1
           }
         }
@@ -74,7 +74,17 @@
           }
         }
       ],
-      "items": []
+      "items": [
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 3
+          }
+        }
+      ]
     },
     {
       "objectId": "101-rainforest_aux_01_device_01",
@@ -126,6 +136,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_01_device_01_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/101_rainforest_aux_01_device_01_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 101
+          }
         }
       ]
     },
@@ -168,6 +187,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_01_main_left_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/102_rainforest_aux_01_main_left_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 102
           }
         }
       ]
@@ -222,6 +250,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_02_device_02_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/103_rainforest_aux_02_device_02_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 103
+          }
         }
       ]
     },
@@ -264,6 +301,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_01_main_right_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/104_rainforest_aux_01_main_right_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 104
           }
         }
       ]
@@ -330,6 +376,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/105_rainforest_aux_01_device_03_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/105_rainforest_aux_01_device_03_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 105
+          }
         }
       ]
     },
@@ -395,6 +450,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/106_rainforest_aux_02_device_04_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/106_rainforest_aux_02_device_04_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 106
+          }
         }
       ]
     },
@@ -446,6 +510,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chansaw_01_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/401_rainforest_and_chansaw_01_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 401
           }
         }
       ]
@@ -499,6 +572,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/402_rainforest_and_chansaw_02_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/402_rainforest_and_chansaw_02_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 402
+          }
         }
       ]
     },
@@ -551,6 +633,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chansaw_03_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/403_rainforest_and_chansaw_03_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 403
+          }
         }
       ]
     },
@@ -590,6 +681,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/404_rainforest_and_chansaw_04_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/404_rainforest_and_chansaw_04_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 404
           }
         }
       ]
@@ -643,6 +743,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chansaw_05_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/405_rainforest_and_chansaw_05_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 405
+          }
         }
       ]
     },
@@ -682,6 +791,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/406_rainforest_and_chansaw_06_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/406_rainforest_and_chansaw_06_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 406
           }
         }
       ]
@@ -735,6 +853,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_aux_05_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/407_rainforest_aux_05_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 407
+          }
         }
       ]
     },
@@ -786,6 +913,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/408_rainforest_aux_06_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/408_rainforest_aux_06_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 408
           }
         }
       ]
@@ -839,6 +975,15 @@
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_aux_07_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/409_rainforest_aux_07_000000/manifest-safari.mpd"
           }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 409
+          }
         }
       ]
     },
@@ -890,6 +1035,15 @@
             "type": "dash",
             "url": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/410_rainforest_aux_08_000000/manifest.mpd",
             "urlSafari": "audio/33f98c8d-eed6-4ee6-8470-d2a37eaa8aef/410_rainforest_aux_08_000000/manifest-safari.mpd"
+          }
+        },
+        {
+          "start": 0,
+          "duration": 120,
+          "source": {
+            "type": "image",
+            "src": "images/f4559e35-1f6d-4389-a6c9-0efa31763956.jpg",
+            "priority": 410
           }
         }
       ]

@@ -49,7 +49,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 2
           }
         }
@@ -110,7 +110,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 300
           }
         }
@@ -171,7 +171,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 301
           }
         }
@@ -228,7 +228,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 302
           }
         }
@@ -289,7 +289,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 303
           }
         }
@@ -308,7 +308,7 @@
               {
                 "property": "device.deviceIsMain",
                 "operator": "equals",
-                "value": true
+                "value": false
               }
             ]
           }
@@ -361,7 +361,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 304
           }
         }
@@ -422,7 +422,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 305
           }
         }
@@ -483,7 +483,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 306
           }
         }
@@ -544,7 +544,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 307
           }
         }
@@ -605,7 +605,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 308
           }
         }
@@ -666,7 +666,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 309
           }
         }
@@ -727,7 +727,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 310
           }
         }
@@ -788,7 +788,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 311
           }
         }
@@ -860,7 +860,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 312
           }
         }
@@ -917,7 +917,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 313
           }
         }
@@ -974,7 +974,7 @@
           "duration": 170,
           "source": {
             "type": "image",
-            "src": "images/3c1ca1ca-5d42-4da6-8dc4-76981668cb86.jpg",
+            "src": "images/bd0a9a6e-2711-4acf-8643-b00c8b15b03d.jpg",
             "priority": 314
           }
         }

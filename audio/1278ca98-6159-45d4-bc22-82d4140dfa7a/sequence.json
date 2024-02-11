@@ -38,7 +38,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 100
           }
         }
@@ -102,7 +102,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 101
           }
         }
@@ -113,18 +113,6 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
-        },
-        {
-          "behaviourType": "prohibitedIf",
-          "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "device.deviceIsMain",
-                "operator": "equals",
-                "value": true
-              }
-            ]
-          }
         },
         {
           "behaviourType": "onChange",
@@ -156,6 +144,21 @@
               }
             ]
           }
+        },
+        {
+          "behaviourType": "gainAdjustmentIf",
+          "behaviourParameters": {
+            "gainAdjust": 3,
+            "conditions": [
+              {
+                "conditionId": "72e74031-1c9b-4b0d-a772-117a075f4ff7",
+                "property": "deviceControls.7bb8aca4-adba-482b-b289-f0d93995bb90",
+                "operator": "equals",
+                "value": "c4935f0e-b09f-464f-9e6a-e592419c020b",
+                "invertCondition": true
+              }
+            ]
+          }
         }
       ],
       "items": [
@@ -175,7 +178,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 102
           }
         }
@@ -232,7 +235,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 103
           }
         }
@@ -305,7 +308,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 104
           }
         }
@@ -362,7 +365,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 105
           }
         }
@@ -435,7 +438,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 106
           }
         }
@@ -492,7 +495,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 107
           }
         }
@@ -565,7 +568,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 108
           }
         }
@@ -622,7 +625,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 109
           }
         }
@@ -633,18 +636,6 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
-        },
-        {
-          "behaviourType": "prohibitedIf",
-          "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "device.deviceIsMain",
-                "operator": "equals",
-                "value": true
-              }
-            ]
-          }
         },
         {
           "behaviourType": "spread",
@@ -685,7 +676,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 110
           }
         }
@@ -742,7 +733,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 111
           }
         }
@@ -753,18 +744,6 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
-        },
-        {
-          "behaviourType": "prohibitedIf",
-          "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "device.deviceIsMain",
-                "operator": "equals",
-                "value": true
-              }
-            ]
-          }
         },
         {
           "behaviourType": "spread",
@@ -805,7 +784,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 112
           }
         }
@@ -862,7 +841,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 113
           }
         }
@@ -935,7 +914,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 114
           }
         }
@@ -992,7 +971,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 115
           }
         }
@@ -1003,27 +982,6 @@
       "objectBehaviours": [
         {
           "behaviourType": "allowedEverywhere"
-        },
-        {
-          "behaviourType": "prohibitedIf",
-          "behaviourParameters": {
-            "conditions": [
-              {
-                "property": "device.deviceIsMain",
-                "operator": "equals",
-                "value": true
-              }
-            ]
-          }
-        },
-        {
-          "behaviourType": "onChange",
-          "behaviourParameters": {
-            "start": "canAlwaysStart",
-            "allocate": [
-              "stayInPrevious"
-            ]
-          }
         },
         {
           "behaviourType": "muteIf",
@@ -1065,7 +1023,7 @@
           "duration": 64,
           "source": {
             "type": "image",
-            "src": "images/833e0a46-f49d-44a6-96eb-c44a9782dfda.jpg",
+            "src": "images/62a3ebd0-6628-49b8-bf98-9fd4af9a0bd8.jpg",
             "priority": 116
           }
         }
